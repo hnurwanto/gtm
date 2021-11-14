@@ -32,17 +32,20 @@
     
     <amp-analytics type="googleanalytics" id="analytics1">
       <script type="application/json">
-      {
-        "vars": {
-          "account": "UA-7355867-7"
-        },
-        "triggers": {
-          "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
+          {
+              "vars": {
+                  "account": "UA-7355867-7"
+              },
+              "requests": {
+                  "pageview": "https://dev.heri.my.id/gtm/post-001.html"
+              },
+              "triggers": {
+                  "trackPageview": {
+                      "on": "visible",
+                      "request": "pageview"
+                  }
+              }
           }
-        }
-      }
       </script>
     </amp-analytics>
    
