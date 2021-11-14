@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     
     <link rel="canonical" href="http://dev.heri.my.id/gtm/post-001.html">
   <!--
@@ -27,6 +28,21 @@
   </head>
 
   <body>
+    <amp-analytics type="googleanalytics" id="analytics1">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "287330305"  // Replace with your property ID.
+        },
+        "triggers": {
+          "trackPageview": {  // Trigger names can be any string. trackPageview is not a required name.
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
     <section>
       <article>
         <header>
